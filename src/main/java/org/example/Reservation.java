@@ -142,7 +142,7 @@ public class Reservation implements Stock {
         String add = "", del = "", bev = "", snacks = "";
 
         while (true) {
-            res.log.log(Level.INFO,"Welcome to Central Movie Hall.\n Please choose an operation to perform\n1. Book ticket\n2. Delete book\n3. Add beverage\n4. Add snacks");
+            res.log.log(Level.INFO,"Welcome to Central Movie Hall.\n Please choose an operation to perform\n1. Book ticket\n2. Delete ticket\n3. Add beverage\n4. Add snacks");
             try {
                 res.selectedOperation = Integer.parseInt(res.buff.readLine());
             } catch (IOException e) {
